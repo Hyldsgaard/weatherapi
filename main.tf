@@ -13,8 +13,8 @@ terraform {
 }
 
 variable "imagebuild" {
-    type: string
-    description: "The latest image build"
+    type = string
+    description = "The latest image build"
 }
 
 resource "azurerm_resource_group" "tf_test" {
