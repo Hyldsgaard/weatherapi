@@ -21,7 +21,7 @@ resource "azurerm_resource_group" "tf_test" {
 }
 
 resource "azurerm_container_group" "tf_cg" {
-    name = "weatherapi"
+    name = "hyd-weatherapi"
     location = azurerm_resource_group.tf_test.location
     resource_group_name = azurerm_resource_group.tf_test.name
 
